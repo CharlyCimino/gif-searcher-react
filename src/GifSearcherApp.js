@@ -12,7 +12,7 @@ export const GifSearcherApp = () => {
 	return (
 		<>
 			<h2>GifSearcherApp</h2>
-			<AddCategory />
+			<AddCategory setCategories={setCategories} />
 			<hr />
 
 			<button onClick={handleAdd}>Agregar</button>
