@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
+import { GifGrid } from './components/GifGrid';
 
 export const GifSearcherApp = () => {
 
-	const [categories, setCategories] = useState(['Musica', 'Futbol', 'Peliculas']);
+	const [categories, setCategories] = useState(['Guitarra electrica']);
 
 	return (
 		<>
@@ -13,7 +14,9 @@ export const GifSearcherApp = () => {
 
 			<ol>
 				{
-					categories.map(cat => <li key={cat}> {cat}</li>)
+					categories.map(cat =>
+						<GifGrid key={cat} category={cat} />
+					)
 				}
 			</ol>
 		</>

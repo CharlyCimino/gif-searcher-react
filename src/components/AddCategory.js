@@ -12,7 +12,7 @@ export const AddCategory = ({ setCategories }) => {
 		e.preventDefault();
 
 		if (inputValue.trim().length > 2) {
-			setCategories(estadoAnterior => [...estadoAnterior, inputValue]);
+			setCategories(estadoAnterior => [inputValue, ...estadoAnterior]);
 			setInputValue('');
 		}
 	}
