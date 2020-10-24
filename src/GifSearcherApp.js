@@ -4,14 +4,12 @@ import { GifGrid } from './components/GifGrid';
 
 export const GifSearcherApp = () => {
 
-	const [categories, setCategories] = useState(['Guitarra electrica']);
+	const [categories, setCategories] = useState([]);
 
 	return (
 		<>
 			<h2>GifSearcherApp</h2>
 			<AddCategory setCategories={setCategories} />
-			<hr />
-
 			<ol>
 				{
 					categories.map(cat =>
